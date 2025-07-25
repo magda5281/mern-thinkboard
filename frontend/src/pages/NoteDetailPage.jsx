@@ -48,6 +48,7 @@ const NoteDetailPage = () => {
       toast.success('Note updated');
       navigate('/');
     } catch (err) {
+      console.log('Error in note details:', err);
       toast.error('Failed to update note');
     } finally {
       setSaving(false);
