@@ -1,7 +1,6 @@
 import Note from '../models/Note.js';
 
 export async function getAllNotes(req, res) {
-  //TODO: implement backend sort
   try {
     const sortBy = req.query.sortBy || 'createdAt';
     const order = req.query.order === 'asc' ? 1 : -1; // default to newest first

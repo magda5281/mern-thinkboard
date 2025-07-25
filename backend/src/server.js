@@ -21,8 +21,7 @@ app.use(rateLimiter); //rate limit
 app.use('/api/notes', notesRoutes);
 
 //separate every service into its own folder/file
-// app.use('/api/emails',emailsRoutes)
-// app.use('/api/posts',postsRoutes)
+// ex. app.use('/api/emails',emailsRoutes)
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '../frontend/dist')));

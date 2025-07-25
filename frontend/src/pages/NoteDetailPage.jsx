@@ -2,12 +2,14 @@ import { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router';
 
 import { toast } from 'react-hot-toast';
+import { Trash2Icon } from 'lucide-react';
+
 import LoadingSpinner from '../components/LoadingSpinner';
 import BackToBtn from '../components/BackToBtn';
-import { Trash2Icon } from 'lucide-react';
 import useNotes from '../hooks/useNotes';
+
 const NoteDetailPage = () => {
-  //you can read data passed via navigation using useLocation state
+  //you could read data passed via navigation using useLocation state
   // const { state } = useLocation(null);
   // const note = state?.note;
   const { id } = useParams();
@@ -15,8 +17,7 @@ const NoteDetailPage = () => {
   const { note, loadingNote, deleteNote, updateNote } = useNotes(id);
   const [newNote, setNewNote] = useState(null);
   const [saving, setSaving] = useState(false);
-  console.log({ loadingNote });
-  console.log({ note });
+
   useEffect(() => {
     if (note) {
       setNewNote({ ...note });

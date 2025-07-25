@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router';
 
-import BackToBtn from '../components/BackToBtn';
 import { toast } from 'react-hot-toast';
 import api from '../lib/axios';
+
+import BackToBtn from '../components/BackToBtn';
 
 const CreatePage = () => {
   const [title, setTitle] = useState('');
