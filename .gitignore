@@ -1,0 +1,65 @@
+
+*.suo
+*.ntvs*
+*.njsproj
+*.sw?
+*.sln
+
+
+dist/
+build/
+out/
+coverage/
+
+d# OS files
+.DS_Store
+Thumbs.db
+
+# Node dependencies
+node_modules/
+# (you already have “.node_modules”, but the more common pattern is without the leading dot)
+
+# Build output
+dist/
+build/
+out/
+coverage/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Runtime files
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# VS Code
+.vscode/
+
+# JetBrains IDEs
+.idea/
+
+# Mac settings
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+Icon?
+# Windows image file caches
+ehthumbs.db
+
+# Visual Studio artifacts
+_ReSharper*/
+*.DotSettings.user
